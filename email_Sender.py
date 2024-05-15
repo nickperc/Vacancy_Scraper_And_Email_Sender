@@ -19,7 +19,7 @@ class SendEmail:
         self.email_user = email_user
         self.email_password = email_password
         self.email_subject = input('Please enter the email subject: ')
-        with open('body.txt', 'r') as file:
+        with open('body.txt', 'r', encoding='utf-8') as file:
             self.body = file.read()
 
     # Function to send email
